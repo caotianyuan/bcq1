@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="he1-1g-L1b" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UseCenterWeatherBGSnow.png" translatesAutoresizingMaskIntoConstraints="NO" id="nfl-Wp-bNm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m57-x2-8Fe">
+                    <rect key="frame" x="110" y="10" width="100" height="80"/>
+                    <state key="normal" title="登陆">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Diz-BW-QVq">
+                    <rect key="frame" x="10" y="105" width="40" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="5"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="15" maxX="30" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="-20" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="收藏" image="usercenter_favorite_icon.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                        <rect key="frame" x="0.0" y="101" width="83" height="49"/>
+                    </variation>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py0-lR-fz8">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="15/3" image="tuku_save_btn_forbidden.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="238" y="105" width="71" height="37"/>
+                    </variation>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5e-u1-dcD">
+                    <rect key="frame" x="110" y="105" width="40" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="15" maxX="50" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="-20" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="tuku_comment_btn_n.png">
+                        <attributedString key="attributedTitle">
+                            <fragment content="评论">
+                                <attributes>
+                                    <color key="NSColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="5" name="STHeitiSC-Light"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="91" y="101" width="119" height="58"/>
+                    </variation>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Py0-lR-fz8"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Py0-lR-fz8"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="151" y="246"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="UseCenterWeatherBGSnow.png" width="320" height="213"/>
+        <image name="tuku_comment_btn_n.png" width="44" height="44"/>
+        <image name="tuku_save_btn_forbidden.png" width="22" height="22"/>
+        <image name="usercenter_favorite_icon.png" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+
+<action class="index-action-1" action-name="home" width="100%" height="100%" padding-left="10" padding-right="10" layout="flow">
+    
+    <div width="100%" height="64" margin-top="6">
+        <div action-name="stock" type="stock" market="cn" symbol="sh000001" width="95" height="100%" padding-top="4" layout="flow">
+            <div width="100%" height="15" layout="flow">
+                <label class="index-div1-div1-label1" width="auto" height="15" font="12">上证</label>
+                <label class="index-div1-div1-label2" margin-left="4" width="auto" height="auto" font="10"
+                    visable="~[CNMarketStatus]~" padding-left="2" padding-right="2" padding-bottom="1">~[CNMarketStatus]~</label>
+            </div>
+            <div width="100%" height="auto" layout="flow" margin-top="3">
+                <label width="auto" max-width="82" height="auto" min-height="24" class="~[dataObjects.cn_sh000001.diffStatus]~" font="18" min-font-size="10">~[dataObjects.cn_sh000001.fmtPrice]~</label>
+                <img class="index-div1-img1" margin-left="4" width="10" height="13" margin-top="4.5"></img>
+            </div>
+            <div width="100%" height="auto" layout="flow">
+                <label width="auto" height="auto" class="~[dataObjects.cn_sh000001.diffStatus]~" font="10" min-font-size="6">~[dataObjects.cn_sh000001.fmtDiff]~</label>
+                <label margin-left="1" width="auto" height="auto" class="~[dataObjects.cn_sh000001.diffStatus]~" font="10" min-font-size="6">[~[dataObjects.cn_sh000001.fmt2Chg]~]</label>
+            </div>
+        </div>
+        <img class="index-img-v" width="1" height="54" top="auto" bottom="auto" left="95" gravity="resize"></img>
+        
+        <div action-name="stock" type="stock" market="hk" symbol="HSI" left="95" width="105" height="100%" padding-top="4" padding-left="10" padding-right="5" layout="flow">
+            <div width="100%" height="15" layout="flow">
+                <label class="index-div1-div1-label1" width="auto" height="15" font="12">恒生</label>
+                <label class="index-div1-div1-label2" margin-left="4" width="auto" height="auto" font="10"
+                    visable="~[HKMarketStatus]~" padding-left="2" padding-right="2" padding-bottom="1">~[HKMarketStatus]~</label>
+            </div>
+            <div width="100%" height="auto" layout="flow" margin-top="3">
+                <label width="auto" max-width="80" height="auto" min-height="24" class="~[dataObjects.hk_HSI.diffStatus]~" font="18" min-font-size="10">~[dataObjects.hk_HSI.fmt2Price]~</label>
+                <img class="index-div1-img2" margin-left="4" width="10" height="13" margin-top="4.5"></img>
+            </div>
+            <div width="100%" height="auto" layout="flow">
+                <label width="auto" height="auto" class="~[dataObjects.hk_HSI.diffStatus]~" font="10" min-font-size="6">~[dataObjects.hk_HSI.fmtDiff]~</label>
+                <label margin-left="1" width="auto" height="auto" class="~[dataObjects.hk_HSI.diffStatus]~" font="10" min-font-size="6">[~[dataObjects.hk_HSI.fmt2Chg]~]</label>
+            </div>
+        </div>
+       
+        <img class="index-img-v" width="1" height="54" top="auto" bottom="auto" left="auto" right="100" gravity="resize"></img>
+        
+        <div action-name="stock" type="stock" market="us" symbol=".dji" left="auto" right="0" width="100" height="100%" padding-top="4" padding-left="10" layout="flow">
+            <div width="100%" height="15" layout="flow">
+                <label class="index-div1-div1-label1" width="auto" height="15" font="12">道琼斯</label>
+                <label class="index-div1-div1-label2" margin-left="4" width="auto" height="auto" font="10" 
+                    visable="~[USMarketStatus]~" padding-left="2" padding-right="2" padding-bottom="1">~[USMarketStatus]~</label>
+            </div>
+            <div width="100%" height="auto" layout="flow" margin-top="3">
+                <label width="auto" max-width="80" height="auto" min-height="24" class="~[dataObjects.us_$dji.diffStatus]~" font="18" min-font-size="10">~[dataObjects.us_$dji.fmtPrice]~</label>
+                <img class="index-div1-img3" margin-left="4" width="10" height="13" margin-top="4.5"></img>
+            </div>
+            <div width="100%" height="auto" layout="flow">
+                <label width="auto" height="auto" class="~[dataObjects.us_$dji.diffStatus]~" font="10" min-font-size="6">~[dataObjects.us_$dji.fmtDiff]~</label>
+                <label margin-left="1" width="auto" height="auto" class="~[dataObjects.us_$dji.diffStatus]~" font="10" min-font-size="6">[~[dataObjects.us_$dji.fmt2Chg]~]</label>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div width="100%" height="14">
+        <label class="index-div-label1" width="116" height="14" left="auto" top="auto" right="0" bottom="0" align="right" font="8" padding-right="6" padding-top="2">最后更新时间&nbsp;~[fmtRefreshTime]~</label>
+    </div>
+    
+    <img class="index-img-l" width="100%" height="1" gravity="resize"></img>
+</action>

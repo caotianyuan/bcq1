@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class=" -webkit-">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>新浪新闻 - 正文组件化</title>
+<link href="css/template-ios.css" rel="stylesheet" type="text/css">
+</head>
+
+<!--大s_large 中s_middle 小s_small-->
+<body id="main_article" class="[FONTSIZE] [THEME_STYLE]" style="font-family:[FONT];">
+
+	<!-- 顶部头图-->
+	[HEAD_PIC]
+ 
+	<section id="article-content" class="M_main">
+        
+        <!--顶部banner-->
+        [TOPBANNER]
+        
+        <!--媒体信息-->
+        [MEDIA]
+        
+		<!-- 标题栏 -->
+		<article data-pl="title" class="M_source">
+			<div class="M_timesource">[NEWSTIME]  [NEWSSOURCE]</div>
+			<h1>[NEWSTITLE]</h1>
+		</article>
+        
+        <!--正文-->
+        [NEWSCONTENTS]
+        
+        <!-- 合作广告 -->
+        <article class="A_media">
+            [ADBANNER]
+            
+        </article>
+        
+		<!-- 媒体订阅 -->
+        [CHANNELINFO]
+		
+        
+        <!--文字和图片推广-->
+        <article id="ArticleAD" class="M_promote" data-pl="ad_spread"></article>
+        
+        <!--相关新闻-->
+        <article data-pl="recommends" class="M_news">[NEWSRECOMMENDED]</article>
+        
+        <!--热点关注-->
+        <article data-pl="keys" class="M_key">[NEWSKEYWORDS]</article>
+		
+        <!--名人评论-->
+        <article id="people_comments" data-pl="people_comments" class="M_comment"></article>
+        
+        <!--热门评论-->
+        <article id="hot_comments" data-pl="hot_comments" class="M_comment"></article>
+        
+        <!--应用推荐-->
+        <article id="appExt">[NEWSAPPEXT]</article>
+        
+	</section>
+
+	<script type="text/javascript">
+		// 页面配置区域
+		var $CONFIG = {};
+		var JSON_DATA;
+		$CONFIG.timeStart = new Date() - 0;
+		$CONFIG.platform = 'ios';
+		$CONFIG.pageData = [JSON_DATA];
+	</script>
+	<script src="js/conf/static/imgload.js"></script>
+	<script>
+	if(window.imgBox){
+		window.imgBox.init({
+			styleError : 'C_download',
+            styleErrorSmall : 'C_downloadsmall',
+			styleLoading : 'C_loading'
+		});
+	}
+	</script>
+	
+	<script type="text/javascript" src="js/lithe.js" data-config="/config.js"></script>
+	<script type="text/javascript">
+		lithe.use('conf/global', function(){
+			lithe.use('conf/page/compindex');
+		});
+	</script>
+
+</body>
+</html>
