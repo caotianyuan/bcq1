@@ -34,6 +34,7 @@
     
     fileData=[[NSData alloc]init];
     
+    NSLog(@"123");
     
     UIButton *rightButton=[UIButton buttonWithType:UIButtonTypeCustom];
     [rightButton setTitle:@"发送" forState:UIControlStateNormal];
